@@ -246,18 +246,24 @@ main { display: flex; min-height: calc(100vh - 160px); }
 }
 .ruby-text {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
-  line-height: 2.8;
+  line-height: 2.4;
   color: #444;
   margin-bottom: 10px;
   background: #FFF9F0;
   padding: 12px 15px;
-  border-radius: 12px;
+  border-radius: 8px;
   border-left: 4px solid var(--accent);
+}
+.ruby-text ruby {
+  display: inline ruby;
+  ruby-position: over;
+  margin-inline: 0.02em;
 }
 ruby rt {
   font-size: 0.55em;
   color: #FF6B6B;
   font-weight: 700;
+  letter-spacing: 0;
 }
 .jp-reading {
   font-size: 0.95rem;
