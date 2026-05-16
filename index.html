@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>儿童论语学习 🎋 こどものためのろんご</title>
-  <meta name="description" content="儿童论语学习网站，支持日文Ruby注音、中文解释和音频朗读，让孩子轻松学习论语。" />
+  <title>儿童《论语》学习 | こどものための論語</title>
+  <meta name="description" content="面向儿童的完整《论语》学习网站，包含 20 篇原文、中文儿童导读、日语提示、朗读和学习进度。" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Inline extras */
     .stats-row {
       display: flex;
       gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
     .stat-chip {
       background: white;
@@ -39,42 +38,35 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="header-title" id="homeBtn" style="cursor:pointer" title="ホームへ戻る">
-    🎋 儿童论语学习 🎋
+  <div class="header-title" id="homeBtn" style="cursor:pointer" title="回到首页">
+    儿童《论语》学习
   </div>
   <div class="header-subtitle">
-    <ruby>論語<rt>ろんご</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しく<ruby>学<rt>まな</rt></ruby>ぼう！ · 和孔子一起学论语
+    <ruby>論語<rt>ろんご</rt></ruby>をたのしく学ぼう · 和孔子一起读经典
   </div>
-  <div class="stars-deco">⭐ 🐼 📚 🐼 ⭐</div>
+  <div class="stars-deco">★ 学 · 思 · 仁 · 礼 ★</div>
 </header>
 
-<!-- PROGRESS -->
 <div class="progress-section">
-  <div class="progress-label">📈 学习进度</div>
+  <div class="progress-label">学习进度</div>
   <div class="progress-bar-bg">
     <div class="progress-bar-fill" id="progressFill"></div>
   </div>
-  <div class="progress-count" id="progressCount">0 / 0 句</div>
+  <div class="progress-count" id="progressCount">0 / 0 条</div>
 </div>
 
-<!-- MAIN -->
 <main>
   <nav class="sidebar" id="sidebar">
-    <div class="sidebar-title">📖 目录</div>
+    <div class="sidebar-title">目录</div>
     <div id="chapterNav"></div>
   </nav>
-  <div class="content" id="content">
-    <!-- Rendered by JS -->
-  </div>
+  <div class="content" id="content"></div>
 </main>
 
-<!-- MASCOT -->
-<div class="mascot" id="mascot" title="クリックしてね！">🐼</div>
+<div class="mascot" id="mascot" title="点我看看学习提示">孔</div>
 <div class="mascot-bubble" id="mascotBubble"></div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script src="data.js"></script>
